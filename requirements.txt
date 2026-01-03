@@ -1,0 +1,21 @@
+# Core
+python-dotenv
+
+# LLM / AI
+transformers
+torch
+sentencepiece
+
+# Optional local LLM support (GGUF / llama.cpp style)
+llama-cpp-python
+
+# Web + APIs
+requests
+beautifulsoup4
+
+# UI (optional)
+gradio
+
+# Utilities
+rich
+tqdm
