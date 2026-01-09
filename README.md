@@ -20,7 +20,6 @@ This project solves that by enforcing:
 * **Explicit artifact intent.**
 * **Verifiable outcomes.**
 
-```markdown
 ## 🏗️ Architecture Overview
 
 The system operates on a strictly gated pipeline. Each phase has hard rules; violations cause a "fail fast" response.
