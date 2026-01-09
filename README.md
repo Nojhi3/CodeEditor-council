@@ -20,12 +20,6 @@ This project solves that by enforcing:
 * **Explicit artifact intent.**
 * **Verifiable outcomes.**
 
----
-
-It looks like the Markdown renderer (likely GitHub or VS Code) is failing because the closing code fence (```) for the Mermaid block was missing or merged with the next block in your file.
-
-Here is the **fixed** Architecture section. You can replace the broken section in your `README.md` with this exactly:
-
 ```markdown
 ## 🏗️ Architecture Overview
 
