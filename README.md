@@ -22,7 +22,12 @@ This project solves that by enforcing:
 
 ---
 
-##  Architecture Overview
+It looks like the Markdown renderer (likely GitHub or VS Code) is failing because the closing code fence (```) for the Mermaid block was missing or merged with the next block in your file.
+
+Here is the **fixed** Architecture section. You can replace the broken section in your `README.md` with this exactly:
+
+```markdown
+## 🏗️ Architecture Overview
 
 The system operates on a strictly gated pipeline. Each phase has hard rules; violations cause a "fail fast" response.
 
@@ -35,6 +40,8 @@ graph TD
     Execute --> Tools[TOOLS: File IO, etc.]
     Tools --> Reflect[REFLECT: Post-mortem verification]
     Reflect --> Memory[LONG-TERM MEMORY: Outcomes only]
+
+```
 
 ```text
 User Request
