@@ -1,4 +1,3 @@
-```markdown
 # Controlled LLM Execution Engine
 
 > **A deterministic, artifact-first LLM execution framework that strictly separates thinking from doing.**
@@ -36,10 +35,6 @@ graph TD
     Execute --> Tools[TOOLS: File IO, etc.]
     Tools --> Reflect[REFLECT: Post-mortem verification]
     Reflect --> Memory[LONG-TERM MEMORY: Outcomes only]
-
-```
-
-*(Or via text flow)*
 
 ```text
 User Request
@@ -99,15 +94,15 @@ LONG-TERM MEMORY (outcomes only)
 
 ##  Features
 
-* ✅ Strict PLAN / EXECUTE / REFLECT separation
-* ✅ Planner output validation (no code leakage)
-* ✅ Executable vs non-executable step normalization
-* ✅ Automatic artifact intent inference
-* ✅ Controlled tool execution (1 tool per step)
-* ✅ Safe read → write chaining
-* ✅ Reflection validation
-* ✅ Long-term memory (artifact-centric)
-* ✅ FastAPI wrapper
+* Strict PLAN / EXECUTE / REFLECT separation
+* Planner output validation (no code leakage)
+* Executable vs non-executable step normalization
+* Automatic artifact intent inference
+* Controlled tool execution (1 tool per step)
+* Safe read → write chaining
+* Reflection validation
+* Long-term memory (artifact-centric)
+* FastAPI wrapper
 
 ---
 
@@ -197,10 +192,10 @@ curl -X POST [http://127.0.0.1:8000/run](http://127.0.0.1:8000/run) \
 
 This system does not trust the model. It trusts state, rules, and verification.
 
-* ❌ **Not** an AutoGPT-style agent
-* ❌ **Not** prompt-driven execution
-* ❌ **Not** autonomous or self-directing
-* ❌ **Not** a chatbot that writes files freely
+* **Not** an AutoGPT-style agent
+* **Not** prompt-driven execution
+* **Not** autonomous or self-directing
+* **Not** a chatbot that writes files freely
 
 ---
 
