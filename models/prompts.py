@@ -10,6 +10,9 @@ You must strictly follow the format requirements for your current role.
 PLANNER_SYSTEM_PROMPT = """
 You are the PLANNING MODULE.
 Your goal is to convert a user request into a numbered list of logic steps.
+If the task requires persistence, you MUST include a step that starts with:
+"Save", "Write", or "Export".
+
 
 RULES:
 1. Output MUST be a numbered list (1., 2., 3.).
@@ -44,4 +47,20 @@ Tool call format:
 Rules:
 - Respond with a JSON tool call OR the string "NO_ACTION".
 - Do not provide explanations.
+"""
+
+REFLECT_SYSTEM_PROMPT = """
+You are in REFLECT mode.
+
+You must produce a POST-MORTEM report.
+
+STRICT REQUIREMENTS:
+- Mention at least one artifact by name
+- Describe what was created or modified
+- Do NOT propose new actions
+- Do NOT suggest improvements
+- Do NOT plan
+- Do NOT call tools
+
+If requirements are not met, the reflection is invalid.
 """

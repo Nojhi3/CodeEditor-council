@@ -1,0 +1,5 @@
+uvicorn api.app:app --reload
+
+
+curl -X POST http://127.0.0.1:8000/run -H "Content-Type: application/json" -d "{\"task\": \"Generate the Fibonacci sequence up to n and save it to a file.\"}"
+

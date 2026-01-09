@@ -3,7 +3,7 @@ from core.orchestrator import Orchestrator
 orchestrator = Orchestrator(provider="local")
 
 response = orchestrator.run(
-    "Write a Python function that takes a list of numbers and returns the list sorted in ascending order. Save the code to a file named 'sort_numbers.py'."
+    "Generate the Fibonacci sequence up to n and save it to a file."
 )
 
 print("\n=== RESPONSE ===\n")

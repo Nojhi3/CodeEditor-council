@@ -32,6 +32,9 @@ class TaskState:
         # Diagnostics
         # -------------------------
         self.last_error: Optional[str] = None
+        # Tool chaining (controlled)
+        self.last_tool: Optional[str] = None
+
 
     # =========================================================
     # Task / Plan management
@@ -49,6 +52,8 @@ class TaskState:
         self.artifact_roles.clear()
         self.expected_artifact = None
         self.expected_artifact_role = None
+        self.last_tool = None
+
 
         # Reset diagnostics
         self.last_error = None
@@ -141,3 +146,9 @@ ARTIFACTS:
 LAST ERROR:
 {self.last_error or "None"}
 """
+    def record_tool(self, tool_name: str):
+        self.last_tool = tool_name
+
+    def clear_last_tool(self):
+        self.last_tool = None
+
